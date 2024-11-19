@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_6f66dc18cb3231acefd1a4492f28f12b {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_6f66dc18cb3231acefd1a4492f28f12b" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_6f66dc18cb3231acefd1a4492f28f12b = L.map(
+                "map_6f66dc18cb3231acefd1a4492f28f12b",
+                {
+                    center: [25.270876425, 85.19718344393853],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 8,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_1ab8f54bec5f7c8cb933fedd26eb3270 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_1ab8f54bec5f7c8cb933fedd26eb3270.addTo(map_6f66dc18cb3231acefd1a4492f28f12b);
+        
+    
+            var marker_85cd1205d86031b043c938eec4a12aca = L.marker(
+                [25.6093239, 85.1235252],
+                {}
+            ).addTo(map_6f66dc18cb3231acefd1a4492f28f12b);
+        
+    
+        var popup_d4c8ce09a05300a350948a916beb7dfe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cd6a356914ff1e34ee5e39af725e2c40 = $(`<div id="html_cd6a356914ff1e34ee5e39af725e2c40" style="width: 100.0%; height: 100.0%;">Patna: 27.42%</div>`)[0];
+                popup_d4c8ce09a05300a350948a916beb7dfe.setContent(html_cd6a356914ff1e34ee5e39af725e2c40);
+            
+        
+
+        marker_85cd1205d86031b043c938eec4a12aca.bindPopup(popup_d4c8ce09a05300a350948a916beb7dfe)
+        ;
+
+        
+    
+    
+            marker_85cd1205d86031b043c938eec4a12aca.bindTooltip(
+                `<div>
+                     Patna
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6a2bac18b4a84148133354f6f5f0998e = L.marker(
+                [24.7964355, 85.0079563],
+                {}
+            ).addTo(map_6f66dc18cb3231acefd1a4492f28f12b);
+        
+    
+        var popup_4244558ea920d6e26928efb3b23dcab5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_675b5fc955e25d2dd00e2030a8da904e = $(`<div id="html_675b5fc955e25d2dd00e2030a8da904e" style="width: 100.0%; height: 100.0%;">Gaya: 11.29%</div>`)[0];
+                popup_4244558ea920d6e26928efb3b23dcab5.setContent(html_675b5fc955e25d2dd00e2030a8da904e);
+            
+        
+
+        marker_6a2bac18b4a84148133354f6f5f0998e.bindPopup(popup_4244558ea920d6e26928efb3b23dcab5)
+        ;
+
+        
+    
+    
+            marker_6a2bac18b4a84148133354f6f5f0998e.bindTooltip(
+                `<div>
+                     Gaya
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cf6b6fdd152d12dffd2aceb6fe89da19 = L.marker(
+                [25.15295785, 85.00650426458421],
+                {}
+            ).addTo(map_6f66dc18cb3231acefd1a4492f28f12b);
+        
+    
+        var popup_ba2b577a4479ab64328323f5de136c1f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c26355dfc857c2b2243dc33a9591feb8 = $(`<div id="html_c26355dfc857c2b2243dc33a9591feb8" style="width: 100.0%; height: 100.0%;">Jehanabad: 4.84%</div>`)[0];
+                popup_ba2b577a4479ab64328323f5de136c1f.setContent(html_c26355dfc857c2b2243dc33a9591feb8);
+            
+        
+
+        marker_cf6b6fdd152d12dffd2aceb6fe89da19.bindPopup(popup_ba2b577a4479ab64328323f5de136c1f)
+        ;
+
+        
+    
+    
+            marker_cf6b6fdd152d12dffd2aceb6fe89da19.bindTooltip(
+                `<div>
+                     Jehanabad
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d3c0e042443988b17d1dcf209fc82b1d = L.marker(
+                [25.56181525, 84.86694757191393],
+                {}
+            ).addTo(map_6f66dc18cb3231acefd1a4492f28f12b);
+        
+    
+        var popup_949e7b74a44c2c4f0e836c74ba54a569 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7af9b636a888e922e89b09bcb1dbda07 = $(`<div id="html_7af9b636a888e922e89b09bcb1dbda07" style="width: 100.0%; height: 100.0%;">Bihta: 4.84%</div>`)[0];
+                popup_949e7b74a44c2c4f0e836c74ba54a569.setContent(html_7af9b636a888e922e89b09bcb1dbda07);
+            
+        
+
+        marker_d3c0e042443988b17d1dcf209fc82b1d.bindPopup(popup_949e7b74a44c2c4f0e836c74ba54a569)
+        ;
+
+        
+    
+    
+            marker_d3c0e042443988b17d1dcf209fc82b1d.bindTooltip(
+                `<div>
+                     Bihta
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2c91eb4ca05ab6cd6b7779bcb3d32075 = L.marker(
+                [25.0739404, 84.98787293898746],
+                {}
+            ).addTo(map_6f66dc18cb3231acefd1a4492f28f12b);
+        
+    
+        var popup_40d1bcc6be7691909e1f03b5cfde9c1d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_02e0b64e3dde22f789a47f4e4561d34d = $(`<div id="html_02e0b64e3dde22f789a47f4e4561d34d" style="width: 100.0%; height: 100.0%;">Makhdumpur: 4.84%</div>`)[0];
+                popup_40d1bcc6be7691909e1f03b5cfde9c1d.setContent(html_02e0b64e3dde22f789a47f4e4561d34d);
+            
+        
+
+        marker_2c91eb4ca05ab6cd6b7779bcb3d32075.bindPopup(popup_40d1bcc6be7691909e1f03b5cfde9c1d)
+        ;
+
+        
+    
+    
+            marker_2c91eb4ca05ab6cd6b7779bcb3d32075.bindTooltip(
+                `<div>
+                     Makhdumpur
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4303a48cb795c63972c9bc49649aa9bf = L.marker(
+                [25.4763264, 85.2378525745791],
+                {}
+            ).addTo(map_6f66dc18cb3231acefd1a4492f28f12b);
+        
+    
+        var popup_7d9b96b47c89c73965aefcd2f58fc046 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_92162786d1a65f1d295987c44042a521 = $(`<div id="html_92162786d1a65f1d295987c44042a521" style="width: 100.0%; height: 100.0%;">Fatwah: 3.23%</div>`)[0];
+                popup_7d9b96b47c89c73965aefcd2f58fc046.setContent(html_92162786d1a65f1d295987c44042a521);
+            
+        
+
+        marker_4303a48cb795c63972c9bc49649aa9bf.bindPopup(popup_7d9b96b47c89c73965aefcd2f58fc046)
+        ;
+
+        
+    
+    
+            marker_4303a48cb795c63972c9bc49649aa9bf.bindTooltip(
+                `<div>
+                     Fatwah
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_019bc53c1ed46c70e289ae40b5d4eacd = L.marker(
+                [25.5601145, 85.1343521],
+                {}
+            ).addTo(map_6f66dc18cb3231acefd1a4492f28f12b);
+        
+    
+        var popup_8e51af31c6591595f318e387efe8fb43 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dd86741b31729cf3f3ae9fc5ed44534f = $(`<div id="html_dd86741b31729cf3f3ae9fc5ed44534f" style="width: 100.0%; height: 100.0%;">Kurthoul: 3.23%</div>`)[0];
+                popup_8e51af31c6591595f318e387efe8fb43.setContent(html_dd86741b31729cf3f3ae9fc5ed44534f);
+            
+        
+
+        marker_019bc53c1ed46c70e289ae40b5d4eacd.bindPopup(popup_8e51af31c6591595f318e387efe8fb43)
+        ;
+
+        
+    
+    
+            marker_019bc53c1ed46c70e289ae40b5d4eacd.bindTooltip(
+                `<div>
+                     Kurthoul
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0bab0c1fd3228b30a5af8fd9151cd989 = L.marker(
+                [25.3516471, 84.98734798892505],
+                {}
+            ).addTo(map_6f66dc18cb3231acefd1a4492f28f12b);
+        
+    
+        var popup_7827d3c2af29ba2321413bece69c2abf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5fd4d3b0ed69f3b358e6d4b06a4d6ced = $(`<div id="html_5fd4d3b0ed69f3b358e6d4b06a4d6ced" style="width: 100.0%; height: 100.0%;">Masaurhi: 3.23%</div>`)[0];
+                popup_7827d3c2af29ba2321413bece69c2abf.setContent(html_5fd4d3b0ed69f3b358e6d4b06a4d6ced);
+            
+        
+
+        marker_0bab0c1fd3228b30a5af8fd9151cd989.bindPopup(popup_7827d3c2af29ba2321413bece69c2abf)
+        ;
+
+        
+    
+    
+            marker_0bab0c1fd3228b30a5af8fd9151cd989.bindTooltip(
+                `<div>
+                     Masaurhi
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8f223b7d3ec1652e0a7109fc644e12e8 = L.marker(
+                [25.5801196, 84.75725647778808],
+                {}
+            ).addTo(map_6f66dc18cb3231acefd1a4492f28f12b);
+        
+    
+        var popup_56048ed355e8240d9c45989ef8f041b7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_be1fe99c29bbff0b31eed26d9a9df20b = $(`<div id="html_be1fe99c29bbff0b31eed26d9a9df20b" style="width: 100.0%; height: 100.0%;">Koilwar: 3.23%</div>`)[0];
+                popup_56048ed355e8240d9c45989ef8f041b7.setContent(html_be1fe99c29bbff0b31eed26d9a9df20b);
+            
+        
+
+        marker_8f223b7d3ec1652e0a7109fc644e12e8.bindPopup(popup_56048ed355e8240d9c45989ef8f041b7)
+        ;
+
+        
+    
+    
+            marker_8f223b7d3ec1652e0a7109fc644e12e8.bindTooltip(
+                `<div>
+                     Koilwar
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ea7306d11eec97df224f3073da6b51d9 = L.marker(
+                [25.193859, 85.5208617],
+                {}
+            ).addTo(map_6f66dc18cb3231acefd1a4492f28f12b);
+        
+    
+        var popup_4dacce31bbd4c68aa946508acc5a6796 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ae45049eaf46c2b57901bfdfa44eb156 = $(`<div id="html_ae45049eaf46c2b57901bfdfa44eb156" style="width: 100.0%; height: 100.0%;">Bihar Sharif: 3.23%</div>`)[0];
+                popup_4dacce31bbd4c68aa946508acc5a6796.setContent(html_ae45049eaf46c2b57901bfdfa44eb156);
+            
+        
+
+        marker_ea7306d11eec97df224f3073da6b51d9.bindPopup(popup_4dacce31bbd4c68aa946508acc5a6796)
+        ;
+
+        
+    
+    
+            marker_ea7306d11eec97df224f3073da6b51d9.bindTooltip(
+                `<div>
+                     Bihar Sharif
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_89d15841b582189b00bb7c0747ef32ee = L.marker(
+                [25.62345725, 84.59683868653386],
+                {}
+            ).addTo(map_6f66dc18cb3231acefd1a4492f28f12b);
+        
+    
+        var popup_12301d841c8079c97eeaa6136d13870c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0de1f53dff08c1cadd65ecec7a49dfe8 = $(`<div id="html_0de1f53dff08c1cadd65ecec7a49dfe8" style="width: 100.0%; height: 100.0%;">Arrah: 3.23%</div>`)[0];
+                popup_12301d841c8079c97eeaa6136d13870c.setContent(html_0de1f53dff08c1cadd65ecec7a49dfe8);
+            
+        
+
+        marker_89d15841b582189b00bb7c0747ef32ee.bindPopup(popup_12301d841c8079c97eeaa6136d13870c)
+        ;
+
+        
+    
+    
+            marker_89d15841b582189b00bb7c0747ef32ee.bindTooltip(
+                `<div>
+                     Arrah
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_411134e8d0af8d9a1ad198496fe729c5 = L.marker(
+                [25.0299973, 85.4207368],
+                {}
+            ).addTo(map_6f66dc18cb3231acefd1a4492f28f12b);
+        
+    
+        var popup_3186aa8fdebefec6adba5142d87a14f4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f90bd6434cf4dee1de21d7956dc06ec0 = $(`<div id="html_f90bd6434cf4dee1de21d7956dc06ec0" style="width: 100.0%; height: 100.0%;">Rajgir: 3.23%</div>`)[0];
+                popup_3186aa8fdebefec6adba5142d87a14f4.setContent(html_f90bd6434cf4dee1de21d7956dc06ec0);
+            
+        
+
+        marker_411134e8d0af8d9a1ad198496fe729c5.bindPopup(popup_3186aa8fdebefec6adba5142d87a14f4)
+        ;
+
+        
+    
+    
+            marker_411134e8d0af8d9a1ad198496fe729c5.bindTooltip(
+                `<div>
+                     Rajgir
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b21df1b170b49dce57d241977166f6a3 = L.marker(
+                [24.60839765, 85.22643708983149],
+                {}
+            ).addTo(map_6f66dc18cb3231acefd1a4492f28f12b);
+        
+    
+        var popup_53a8a94795296b30f80605e77dbc8308 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_08682964ffe38c811f6913d40a340df7 = $(`<div id="html_08682964ffe38c811f6913d40a340df7" style="width: 100.0%; height: 100.0%;">Fatehpur: 3.23%</div>`)[0];
+                popup_53a8a94795296b30f80605e77dbc8308.setContent(html_08682964ffe38c811f6913d40a340df7);
+            
+        
+
+        marker_b21df1b170b49dce57d241977166f6a3.bindPopup(popup_53a8a94795296b30f80605e77dbc8308)
+        ;
+
+        
+    
+    
+            marker_b21df1b170b49dce57d241977166f6a3.bindTooltip(
+                `<div>
+                     Fatehpur
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e367c390ffaeeefd28fe0ffff52c096c = L.marker(
+                [25.30068345, 85.24938291069174],
+                {}
+            ).addTo(map_6f66dc18cb3231acefd1a4492f28f12b);
+        
+    
+        var popup_62597c879bc08e1c41eb5cd60d52fd31 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c865258476fc7c32b4e3e832958ed010 = $(`<div id="html_c865258476fc7c32b4e3e832958ed010" style="width: 100.0%; height: 100.0%;">Hilsa: 1.61%</div>`)[0];
+                popup_62597c879bc08e1c41eb5cd60d52fd31.setContent(html_c865258476fc7c32b4e3e832958ed010);
+            
+        
+
+        marker_e367c390ffaeeefd28fe0ffff52c096c.bindPopup(popup_62597c879bc08e1c41eb5cd60d52fd31)
+        ;
+
+        
+    
+    
+            marker_e367c390ffaeeefd28fe0ffff52c096c.bindTooltip(
+                `<div>
+                     Hilsa
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5b5d3f5832fd258c164ade938e2d9f3a = L.marker(
+                [24.40648335, 84.629212130725],
+                {}
+            ).addTo(map_6f66dc18cb3231acefd1a4492f28f12b);
+        
+    
+        var popup_bdee14e26b13219b635df3e60e481dea = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c2633e8027e6ed1a25d1907669cd34f9 = $(`<div id="html_c2633e8027e6ed1a25d1907669cd34f9" style="width: 100.0%; height: 100.0%;">Imamganj: 1.61%</div>`)[0];
+                popup_bdee14e26b13219b635df3e60e481dea.setContent(html_c2633e8027e6ed1a25d1907669cd34f9);
+            
+        
+
+        marker_5b5d3f5832fd258c164ade938e2d9f3a.bindPopup(popup_bdee14e26b13219b635df3e60e481dea)
+        ;
+
+        
+    
+    
+            marker_5b5d3f5832fd258c164ade938e2d9f3a.bindTooltip(
+                `<div>
+                     Imamganj
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_01116bb1990a40b56efa1949c0ecb8a5 = L.marker(
+                [26.131008, 84.39107448141786],
+                {}
+            ).addTo(map_6f66dc18cb3231acefd1a4492f28f12b);
+        
+    
+        var popup_dee4d68de1e53e3e859a3366154d41a7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9af63ef547f496a50d6eba5cd92786fc = $(`<div id="html_9af63ef547f496a50d6eba5cd92786fc" style="width: 100.0%; height: 100.0%;">Siwan: 1.61%</div>`)[0];
+                popup_dee4d68de1e53e3e859a3366154d41a7.setContent(html_9af63ef547f496a50d6eba5cd92786fc);
+            
+        
+
+        marker_01116bb1990a40b56efa1949c0ecb8a5.bindPopup(popup_dee4d68de1e53e3e859a3366154d41a7)
+        ;
+
+        
+    
+    
+            marker_01116bb1990a40b56efa1949c0ecb8a5.bindTooltip(
+                `<div>
+                     Siwan
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9f3651c8f5246f3288b0c6c13e23b544 = L.marker(
+                [25.2965388, 85.0173352],
+                {}
+            ).addTo(map_6f66dc18cb3231acefd1a4492f28f12b);
+        
+    
+        var popup_4f95cf75f18ec31c72e3f3f87bf0c26b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d7002e790013dd785b4a0b114d8353a5 = $(`<div id="html_d7002e790013dd785b4a0b114d8353a5" style="width: 100.0%; height: 100.0%;">Nadaul: 1.61%</div>`)[0];
+                popup_4f95cf75f18ec31c72e3f3f87bf0c26b.setContent(html_d7002e790013dd785b4a0b114d8353a5);
+            
+        
+
+        marker_9f3651c8f5246f3288b0c6c13e23b544.bindPopup(popup_4f95cf75f18ec31c72e3f3f87bf0c26b)
+        ;
+
+        
+    
+    
+            marker_9f3651c8f5246f3288b0c6c13e23b544.bindTooltip(
+                `<div>
+                     Nadaul
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_09f5085800dca9673e2db6b8fb0af4f0 = L.marker(
+                [26.1482548, 85.3316096785584],
+                {}
+            ).addTo(map_6f66dc18cb3231acefd1a4492f28f12b);
+        
+    
+        var popup_65bc3a0dec570786d5ad1dda83a5dac5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d6ff5ec5b910fdfb9b049fa0ae9ad47e = $(`<div id="html_d6ff5ec5b910fdfb9b049fa0ae9ad47e" style="width: 100.0%; height: 100.0%;">Muzaffarpur: 1.61%</div>`)[0];
+                popup_65bc3a0dec570786d5ad1dda83a5dac5.setContent(html_d6ff5ec5b910fdfb9b049fa0ae9ad47e);
+            
+        
+
+        marker_09f5085800dca9673e2db6b8fb0af4f0.bindPopup(popup_65bc3a0dec570786d5ad1dda83a5dac5)
+        ;
+
+        
+    
+    
+            marker_09f5085800dca9673e2db6b8fb0af4f0.bindTooltip(
+                `<div>
+                     Muzaffarpur
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_925ceda63acf39d0b5d7935c7cd9597b = L.marker(
+                [25.4639089, 85.11218926787205],
+                {}
+            ).addTo(map_6f66dc18cb3231acefd1a4492f28f12b);
+        
+    
+        var popup_116ebd88cd14b5ca36b954730756ecec = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_be253eab8ea0dd817488e6efe0ec17c8 = $(`<div id="html_be253eab8ea0dd817488e6efe0ec17c8" style="width: 100.0%; height: 100.0%;">Punpun: 1.61%</div>`)[0];
+                popup_116ebd88cd14b5ca36b954730756ecec.setContent(html_be253eab8ea0dd817488e6efe0ec17c8);
+            
+        
+
+        marker_925ceda63acf39d0b5d7935c7cd9597b.bindPopup(popup_116ebd88cd14b5ca36b954730756ecec)
+        ;
+
+        
+    
+    
+            marker_925ceda63acf39d0b5d7935c7cd9597b.bindTooltip(
+                `<div>
+                     Punpun
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_caac1dda72c4cbb5b7e77fcc6393dac7 = L.marker(
+                [24.817324900000003, 85.51790846584018],
+                {}
+            ).addTo(map_6f66dc18cb3231acefd1a4492f28f12b);
+        
+    
+        var popup_4c984d684e150dbba3dd0ce19e9aa06d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8d22527c8547bd3d91c667f94c3b67cc = $(`<div id="html_8d22527c8547bd3d91c667f94c3b67cc" style="width: 100.0%; height: 100.0%;">Nawada: 1.61%</div>`)[0];
+                popup_4c984d684e150dbba3dd0ce19e9aa06d.setContent(html_8d22527c8547bd3d91c667f94c3b67cc);
+            
+        
+
+        marker_caac1dda72c4cbb5b7e77fcc6393dac7.bindPopup(popup_4c984d684e150dbba3dd0ce19e9aa06d)
+        ;
+
+        
+    
+    
+            marker_caac1dda72c4cbb5b7e77fcc6393dac7.bindTooltip(
+                `<div>
+                     Nawada
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_02581eacec6fc47728f7b3faee18deab = L.marker(
+                [25.13326045, 84.81126025770061],
+                {}
+            ).addTo(map_6f66dc18cb3231acefd1a4492f28f12b);
+        
+    
+        var popup_d65546d50983577840903d6cef2e7c68 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9eb7f042291f534b12d20588752f312c = $(`<div id="html_9eb7f042291f534b12d20588752f312c" style="width: 100.0%; height: 100.0%;">Kurtha: 1.61%</div>`)[0];
+                popup_d65546d50983577840903d6cef2e7c68.setContent(html_9eb7f042291f534b12d20588752f312c);
+            
+        
+
+        marker_02581eacec6fc47728f7b3faee18deab.bindPopup(popup_d65546d50983577840903d6cef2e7c68)
+        ;
+
+        
+    
+    
+            marker_02581eacec6fc47728f7b3faee18deab.bindTooltip(
+                `<div>
+                     Kurtha
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a2aa4fbad263cf46885a143476f16566 = L.marker(
+                [25.0869013, 87.2005144],
+                {}
+            ).addTo(map_6f66dc18cb3231acefd1a4492f28f12b);
+        
+    
+        var popup_2f53f5f1e382ebfb26d8c202437beabf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b68f92395c38415c1ccf63bd47e80553 = $(`<div id="html_b68f92395c38415c1ccf63bd47e80553" style="width: 100.0%; height: 100.0%;">Bishunpur: 1.61%</div>`)[0];
+                popup_2f53f5f1e382ebfb26d8c202437beabf.setContent(html_b68f92395c38415c1ccf63bd47e80553);
+            
+        
+
+        marker_a2aa4fbad263cf46885a143476f16566.bindPopup(popup_2f53f5f1e382ebfb26d8c202437beabf)
+        ;
+
+        
+    
+    
+            marker_a2aa4fbad263cf46885a143476f16566.bindTooltip(
+                `<div>
+                     Bishunpur
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4949789bd458cb9e0051fc8b6e993b90 = L.marker(
+                [25.4534509, 85.6219947],
+                {}
+            ).addTo(map_6f66dc18cb3231acefd1a4492f28f12b);
+        
+    
+        var popup_daaf151c4b47730babda3b7d2891a708 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0e2c32613c3a6d78ab226c236f51c6ea = $(`<div id="html_0e2c32613c3a6d78ab226c236f51c6ea" style="width: 100.0%; height: 100.0%;">Athmal Gola: 1.61%</div>`)[0];
+                popup_daaf151c4b47730babda3b7d2891a708.setContent(html_0e2c32613c3a6d78ab226c236f51c6ea);
+            
+        
+
+        marker_4949789bd458cb9e0051fc8b6e993b90.bindPopup(popup_daaf151c4b47730babda3b7d2891a708)
+        ;
+
+        
+    
+    
+            marker_4949789bd458cb9e0051fc8b6e993b90.bindTooltip(
+                `<div>
+                     Athmal Gola
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ae52b777a1fd71aec8f5cc9ab1c10aca = L.marker(
+                [24.9490651, 85.6148287],
+                {}
+            ).addTo(map_6f66dc18cb3231acefd1a4492f28f12b);
+        
+    
+        var popup_e5652fa750d4170d31d2e46360f3c508 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b0ac007b5dc404cb68e09fc4ab0c0e69 = $(`<div id="html_b0ac007b5dc404cb68e09fc4ab0c0e69" style="width: 100.0%; height: 100.0%;">Hazipur: 1.61%</div>`)[0];
+                popup_e5652fa750d4170d31d2e46360f3c508.setContent(html_b0ac007b5dc404cb68e09fc4ab0c0e69);
+            
+        
+
+        marker_ae52b777a1fd71aec8f5cc9ab1c10aca.bindPopup(popup_e5652fa750d4170d31d2e46360f3c508)
+        ;
+
+        
+    
+    
+            marker_ae52b777a1fd71aec8f5cc9ab1c10aca.bindTooltip(
+                `<div>
+                     Hazipur
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0108dc42ab26c75f11f635676b4e13cc = L.marker(
+                [25.1496832, 85.6053004],
+                {}
+            ).addTo(map_6f66dc18cb3231acefd1a4492f28f12b);
+        
+    
+        var popup_791cf2cbf528a9d7fddf5ef4343b2fdf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b6a92db5a536d7e5a61ddc3da0c7809f = $(`<div id="html_b6a92db5a536d7e5a61ddc3da0c7809f" style="width: 100.0%; height: 100.0%;">Dhanuki: 1.61%</div>`)[0];
+                popup_791cf2cbf528a9d7fddf5ef4343b2fdf.setContent(html_b6a92db5a536d7e5a61ddc3da0c7809f);
+            
+        
+
+        marker_0108dc42ab26c75f11f635676b4e13cc.bindPopup(popup_791cf2cbf528a9d7fddf5ef4343b2fdf)
+        ;
+
+        
+    
+    
+            marker_0108dc42ab26c75f11f635676b4e13cc.bindTooltip(
+                `<div>
+                     Dhanuki
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4fc07400292e67648084da34d77047f5 = L.marker(
+                [25.0878322, 85.14966925645304],
+                {}
+            ).addTo(map_6f66dc18cb3231acefd1a4492f28f12b);
+        
+    
+        var popup_faedd4cfdc2ca37ace7b912cb2136ff4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d7310294f72eec4fc3413f52732693e5 = $(`<div id="html_d7310294f72eec4fc3413f52732693e5" style="width: 100.0%; height: 100.0%;">Hulasganj: 1.61%</div>`)[0];
+                popup_faedd4cfdc2ca37ace7b912cb2136ff4.setContent(html_d7310294f72eec4fc3413f52732693e5);
+            
+        
+
+        marker_4fc07400292e67648084da34d77047f5.bindPopup(popup_faedd4cfdc2ca37ace7b912cb2136ff4)
+        ;
+
+        
+    
+    
+            marker_4fc07400292e67648084da34d77047f5.bindTooltip(
+                `<div>
+                     Hulasganj
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
